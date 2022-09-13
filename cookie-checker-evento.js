@@ -6,7 +6,7 @@ else {
   var cookieName = "seo-summit-2022";
   if (typeof Cookies.get(cookieName) !== "undefined") {
     // console.log("cookie exists");
-    window.location.href = "/palcos/palco-de-negocios";
+    window.location.href = "/palcos/palco-negocio";
   } else {
     // console.log("cookie doesn't exists");
     $(".evento_validate-trigger").click();
