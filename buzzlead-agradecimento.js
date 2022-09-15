@@ -1,3 +1,4 @@
+// Track do usuário
 !(function (e, t, r, a) {
     var s = "https://static.buzzlead.com.br/widget.js";
     function c() {
@@ -21,3 +22,6 @@
         o.parentNode.insertBefore(p, o);
     }
   })(window, document, 0, "BL-630e73c4bc3e051d49be9f47-GG7W");  
+
+  // Track do patrocinador
+  !function(e,t,i){function r(){e.fireTrigger(e.blId,e.blEvent)}var n;e.blEvent="subscribe",e.blId=i,e.Tracker?r():(n=t.getElementsByTagName("script")[0],(t=t.createElement("script")).src="https://static.buzzlead.com.br/tracker.js",t.onload=r,n.parentNode.insertBefore(t,n))}(window,document,"BL-630e73c4bc3e051d49be9f47-NN6D");
