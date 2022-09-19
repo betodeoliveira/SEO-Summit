@@ -33,7 +33,7 @@ if (window.location.href.indexOf("palco-seo-tech") > -1) {
                 }, 2000);
             }
         }
-        else{
+        else if(currentDay == "23") {
             if (typeof Cookies.get(cookieDay23) == "undefined") {
                 Cookies.set(cookieDay23, "verified", { expires: 30 });
                 $("#palco-tech-email-dia-3").val(Cookies.get(cookieUserEmail));
@@ -41,6 +41,9 @@ if (window.location.href.indexOf("palco-seo-tech") > -1) {
                     $("#wf-form-Palco-Tech---Dia-3").submit();
                 }, 2000);
             }
+        }
+        else {
+            console.log("Ainda não chegou os dias ou a data já passou");
         }
     }, 2000);
 };
