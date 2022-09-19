@@ -1,5 +1,16 @@
+// Palco Tech doesn't has names for each day so we need to hide the title if it is selected
+$("#select-field-palco").change(function() {
+    if($("#select-field-palco").val() == "Palco SEO Tech") {
+        $(".programacao-title-wrapper").css("display", "none");
+    }
+    else {
+        $(".programacao-title-wrapper").css("display", "block");
+    }
+});
+
+// Select the correct title depending on the day selected
 $("#select-field-dia").change(function() {
-    console.log($("#select-field-dia").val());
+    // console.log($("#select-field-dia").val());
     if($("#select-field-dia").val() == "21") {
         $(".programacao-dia-title.is-01").css("display", "block");
         $(".programacao-dia-title.is-02").css("display", "none");
