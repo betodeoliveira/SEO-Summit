@@ -1,6 +1,6 @@
 // Palco Tech doesn't has names for each day so we need to hide the title if it is selected
 $("#select-field-palco").change(function() {
-    console.log($("#select-field-palco").val());
+    // console.log($("#select-field-palco").val());
     if($("#select-field-palco").val() == "Palco SEO Tech") {
         $(".programacao-title-wrapper").css("display", "none");
     }
