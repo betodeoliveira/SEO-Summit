@@ -1,4 +1,3 @@
-//if (window.location.href.indexOf("webflow.io") > -1) {
   if (window.location.href.indexOf(".webflow.io") > -1) {
   // it is on test mode
 }
