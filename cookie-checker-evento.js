@@ -4,11 +4,20 @@
 else {
   var cookieEvento = "seo-summit-2022";
   var cookieUserEmail = "seo-summit-user-email";
+  var previousURL = "seo-summit-previous-url";
   // First checks if the user already has the cookie or not
   if (typeof Cookies.get(cookieEvento) !== "undefined") {
     // console.log("cookie exists");
-    window.location.href = "/palcos/palco-negocio";
-  } else {
+    if (typeof Cookies.get(previousURL) !== "undefined") {
+      var url = Cookies.get(previousURL);
+      Cookies.remove(previousURL);
+      window.location.href = url;
+    }
+    else {
+      window.location.href = "/palcos/palco-negocio";
+    }
+  } 
+  else {
     // console.log("cookie doesn't exists");
     $(".evento_validate-trigger").click();
   }

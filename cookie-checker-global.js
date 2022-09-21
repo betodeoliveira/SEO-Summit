@@ -10,6 +10,7 @@ else {
     $(".evento-display-trigger").click();
   } else {
     // console.log("cookie doesn't exists");
+    Cookies.set("seo-summit-previous-url", window.location.href, { expires: 30 });
     window.location.href = "/evento";
   }
 }
