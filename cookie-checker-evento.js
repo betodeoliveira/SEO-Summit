@@ -2,7 +2,8 @@
   // it is on test mode
 }
 else {
-  var cookieEvento = "seo-summit-2022";
+  // var cookieEvento = "seo-summit-2022";
+  var cookieEvento = "seo-summit-2022-evento-encerrado";
   var cookieUserEmail = "seo-summit-user-email";
   var previousURL = "seo-summit-previous-url";
   // First checks if the user already has the cookie or not
